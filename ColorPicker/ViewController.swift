@@ -28,16 +28,22 @@ class ViewController: UIViewController {
         redSlider.minimumValue = 0
         redSlider.maximumValue = 255
         redSlider.value = 0
+        redSlider.minimumTrackTintColor = .red
+        redSlider.tag = 0
+        
         greenSlider.minimumValue = 0
         greenSlider.maximumValue = 255
         greenSlider.value = 0
+        greenSlider.minimumTrackTintColor = .green
+        greenSlider.tag = 1
+        
         blueSlider.minimumValue = 0
         blueSlider.maximumValue = 255
         blueSlider.value = 0
-        redSlider.tag = 0
-        greenSlider.tag = 1
+        blueSlider.minimumTrackTintColor = .blue
         blueSlider.tag = 2
-        viewColor.layer.cornerRadius = 45
+        
+        viewColor.layer.cornerRadius = 20
     }
 
     @IBAction func setColor(_ sender: UISlider) {

@@ -37,6 +37,7 @@ class ViewController: UIViewController {
         redSlider.tag = 0
         greenSlider.tag = 1
         blueSlider.tag = 2
+        viewColor.layer.cornerRadius = 45
     }
 
     @IBAction func setColor(_ sender: UISlider) {
